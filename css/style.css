@@ -1,0 +1,25 @@
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/high-speed-train-station-blurred-cityscape-night-background-generative-ai_191095-1992.jpg?w=996&t=st=1686573243~exp=1686573843~hmac=edc30878882363326c7d7e28e3c00a983de7e87ad0df20a65ac2712c66bac57a);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+
+
+.back {
+    background-color: rgba(0, 0, 0, 0.505);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel {
+    max-width: 43.75rem;
+    max-height: 31.25rem;
+}
