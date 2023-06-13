@@ -41,22 +41,144 @@
 
             </a>
             
-            <div class="container">
+            <div class="container d-flex flex-column align-items-center">
 
-                <input name="km" type="number">
-                <input name="age" type="number">
+                <!--PRICE CALC SECTION-->
 
-                <button id="search-button" type="button">
-                    Cerca
-                </button>
+                <h1 class="text-white mb-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+                <div class="ticket-search p-3">
+
+                    <form>
+
+                        <div class="row">
+
+                            <div class="col-4 text-center">
+                                <label for="" class="form-label text-white">Nome Cognome</label>
+                                <input name="username" type="text" class="form-control text-center">
+                            </div>
+
+                            <div class="col-4 text-center">
+                                <label for="" class="form-label text-white">KM da percorrere</label>
+                                <input name="km" type="number" class="form-control text-center">
+                            </div>
+    
+                            <div class="col-4 text-center">
+                                <label for="" class="form-label text-white">Fascia d'età</label>
+                                <select name="age" class="form-select text-center">
+                                    <option value="1">Minorenne</option>
+                                    <option value="2">Maggiorenne</option>
+                                    <option value="3">Over 65</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-4">
+
+                            <button id="search-button" type="button" class="btn btn-primary">
+                                Cerca
+                            </button>
+
+                            <a href="./pricecalc.html">
+                                <button type="button" class="btn btn-primary ms-4">
+                                    Anulla
+                                </button>
+                            </a>
+                            
+                        </div>
+
+                    </form>
+                    
+                </div>
+
+                <!--TICKET SECTION-->
+
+                <h1 class="text-white mt-5 d-none" id="ticket-title">IL TUO BIGLIETTO</h1>
+
+                <div class="d-none p-3 pb-5" id="ticket">
+
+                    <div>
+
+                        <h4>DETTAGLIO PASSEGGERI</h4>
+                        
+                        <div class="row">
+
+                            <div class=" col-4 border-black bg-secondary p-4 text-white">
+                                <h5>
+                                    NOME PASSEGGERO
+                                </h5>
+                                <h6 id="client-name">
+                                    
+                                </h6>
+                            </div>
+
+
+                            <div class=" col-8 d-flex border border-black border-end-0 p-3">
+                                
+                                <div class="row col-12 text-center">
+
+                                    <div class="col-4">
+
+                                        <h6>
+                                            Offerta
+                                        </h6>
+
+                                        <h6 class="mt-5" id="ticket-type">
+                                            
+                                        </h6>
+                                        
+                                    </div>
+
+                                    <div class="col">
+
+                                        <h6>
+                                            Carrozza
+                                        </h6>
+
+                                        <h6 class="mt-5" id="coach">
+                                            
+                                        </h6>
+                                        
+                                    </div>
+
+                                    <div class="col">
+
+                                        <h6>
+                                            Codice CP
+                                        </h6>
+
+                                        <h6 class="mt-5" id="ticket-code">
+                                            
+                                        </h6>
+                                        
+                                    </div>
+
+                                    <div class="col">
+
+                                        <h6>
+                                            Costo biglietto
+                                        </h6>
+
+                                        <h6 class="mt-5" id="ticket-price">
+                                            
+                                        </h6>
+                                        
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
-
-            <h1 id="final-price">
-
-            </h1>
             
-
         </div>
         
 

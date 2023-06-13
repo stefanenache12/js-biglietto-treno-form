@@ -23,3 +23,14 @@ a {
     max-width: 43.75rem;
     max-height: 31.25rem;
 }
+
+.ticket-search {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60%;
+    border-radius: .9375rem;
+}
+
+#ticket {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+}
