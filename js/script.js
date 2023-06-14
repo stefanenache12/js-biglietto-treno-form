@@ -11,13 +11,17 @@ myButton.addEventListener('click',
         const nameInput = document.querySelector('[name="username"]');
         let ticketPrice = kmInput.value * 0.21;
 
-
-        // CONDIZIONE KM MINORE O UGUALE A 0
+        let myAlert = '';
+        // CONDIZIONE KM MINORE O UGUALE A 0 CAMPO NOME VUOTO
         if(kmInput.value <= 0){
-            alert('Inserire tutti i dati')
-            location.reload();
+            myAlert += 'Inserire tutti i dati \r\n'
+        } else if(nameInput.value === ''){
+            myAlert += 'Inserire tutti i dati \r\n'
         }
 
+        if(myAlert != ''){
+            alert(myAlert);
+        }
         else {
             // CONDIZIONI FASCIA ETA
             if(ageInput.value == 1){
@@ -32,11 +36,6 @@ myButton.addEventListener('click',
     
             else {
                 document.getElementById('ticket-type').innerHTML = 'Offerta Standard';
-            }
-    
-            if(nameInput.value === ''){
-                alert('Il campo del nome è vuoto')
-                location.reload();
             }
     
             // TICKET SECTION
